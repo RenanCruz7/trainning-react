@@ -1,0 +1,116 @@
+/* Estilos para a demonstração de Hooks */
+
+.hooks-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.hooks-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.hooks-navigation button {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.hooks-navigation button:hover {
+  background-color: #e0e0e0;
+}
+
+.hooks-navigation button.active {
+  background-color: #646cff;
+  color: white;
+}
+
+.hook-demo {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hook-demo h2 {
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 8px;
+  margin-top: 0;
+  color: #213547;
+}
+
+.example-section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border-left: 4px solid #646cff;
+}
+
+.example-section h3 {
+  margin-top: 0;
+  color: #454545;
+}
+
+button {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .hooks-navigation {
+    flex-direction: column;
+  }
+  
+  .hooks-navigation button {
+    width: 100%;
+    text-align: left;
+  }
+}
